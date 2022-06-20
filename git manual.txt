@@ -51,7 +51,7 @@ git commit -m "a�adir nuevos cambios a rrama principal"
 git push -u origin master
 
 FUSIONAR RRAMAS CON COMENTARIO
-git merge experimental -m 'Esto es un merge con mensaje'
+git merge experimental -m 'Esto es un merge con mensaje ' 
 
 FUSIONAR CAMBIOS HECHOS EN MASTER "ACTUALIZACION DE LA RRAMA PRINCIPAL" CON MI RRAMA EXPERIMENTAL
 git merge master -m 'Un mensaje del merge de master en el branch experimental'
