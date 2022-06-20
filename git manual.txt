@@ -1,0 +1,73 @@
+TUTORIAL GIT
+������������
+CONFIGURACION DE USUARIO 2022
+git config --global user.name "nombre-usuario"
+git config --global user.email "correo@usuario.com"
+
+Desde la terminal del equipo donde esta el proyecto que queremos subir a github
+Nos vamos a la carpeta del proyecto y ejecutamos estos comandos.
+
+git init
+git add .
+git commit -m "first commit"
+
+crear el repositorio en github
+git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+git branch -M main //crea la rrama main //creo que esto sobra
+git push -u origin master
+
+CLONAR REPOSITORIO GIT
+git clone https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+
+CREAR NUEVA RRAMA
+git checkout -b new-branch //crea la rrama new-branch y se cambia a ella
+
+CAMBIAR DE RRAMA
+git branch //muestra todas las rramas
+git checkout new-branch  //cambia a la rrama new-branch
+
+GUARDAR CAMBIOS DE LA NUEVA RRAMA
+git add .
+git status
+git commit -m "comentario nuevo cambio"
+git push -u origin new-branch //new-branch es remplazado por el nombre de la nueva rrama
+
+VER ESTADO DE CAMBIOS GIT
+git status
+
+AGREGAR NUEVOS CAMBIOS GIT
+git add .
+git status
+git commit -m "comentario nuevo cambio"
+git push -u origin master
+
+MOSTRAR COMMITS DE LAS DIFERENTES RRAMAS
+git show-branch
+
+FUSIONAR RRAMAS
+git checkout main //ingresamos a la rrama a actualizar
+git merge experimental //fusiona la rrama master con la experimental
+git commit -m "a�adir nuevos cambios a rrama principal"
+git push -u origin master
+
+FUSIONAR RRAMAS CON COMENTARIO
+git merge experimental -m 'Esto es un merge con mensaje'
+
+FUSIONAR CAMBIOS HECHOS EN MASTER "ACTUALIZACION DE LA RRAMA PRINCIPAL" CON MI RRAMA EXPERIMENTAL
+git merge master -m 'Un mensaje del merge de master en el branch experimental'
+
+ELIMINAR UNA RRAMA
+git branch -D rama_a_borrar
+
+DESCARGAR UNA RRAMA DE REMOTO
+A veces ocurre que se generan ramas en remoto, por ejemplo cuando han sido creadas por otros usuarios y subidas al hosting de repositorios, como GitHub o similares, y necesitamos acceder a ellas en local para verificar los cambios o continuar el trabajo. En principio esas ramas en remoto creadas por otros usuarios no est�n disponibles para nosotros en local, pero las podemos descargar.
+git fetch
+Lanzado ese comando hemos podido descargar la rama git de remoto. Ahora podemos acceder a ella con los comandos que ya conoces.
+git checkout mi_rama_remota_descargada
+
+
+
+
+
+
+
