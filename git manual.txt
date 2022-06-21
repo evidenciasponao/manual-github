@@ -64,10 +64,3 @@ A veces ocurre que se generan ramas en remoto, por ejemplo cuando han sido cread
 git fetch
 Lanzado ese comando hemos podido descargar la rama git de remoto. Ahora podemos acceder a ella con los comandos que ya conoces.
 git checkout mi_rama_remota_descargada
-
-
-
-
-
-
-
